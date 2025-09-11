@@ -13,7 +13,9 @@
   ],
   "require": {
     "php": ">=8.2",
-    "symfony/framework-bundle": ">=7.0.0"
+    "symfony/framework-bundle": "^7.0",
+    "symfony/uid": "^7.0",
+    "doctrine/orm": "^3.0"
   },
   "autoload": {
     "psr-4": {
