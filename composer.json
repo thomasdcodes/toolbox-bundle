@@ -1,0 +1,23 @@
+{
+  "name": "thomasdcodes/toolbox-bundle",
+  "description": "Gives a toolbox with a lot of helper classes and functionality needed in every project.",
+  "keywords": ["toolbox, class collection, helper classes"],
+  "type": "symfony-bundle",
+  "version": "0.1.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thomas Deutschländer",
+      "email": "me@thomasd.codes"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "symfony/framework-bundle": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tdc\\ToolboxBundle\\": "./src"
+    }
+  }
+}
