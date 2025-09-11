@@ -1,3 +1,6 @@
+# 0.2.1
+- fixed version in composer.json
+
 # 0.2.0
 - Added CreatedAtTrait, UpdatedAtTrait, HashedIdentifierTrait
 
