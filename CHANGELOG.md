@@ -1,3 +1,6 @@
+# 0.2.2
+- First config for user functionality
+
 # 0.2.1
 - fixed version in composer.json
 

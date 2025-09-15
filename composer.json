@@ -3,7 +3,7 @@
   "description": "Gives a toolbox with a lot of helper classes and functionality needed in every project.",
   "keywords": ["toolbox", "class collection", "helper classes"],
   "type": "symfony-bundle",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "MIT",
   "authors": [
     {
@@ -14,6 +14,7 @@
   "require": {
     "php": ">=8.2",
     "symfony/framework-bundle": "^7.0",
+    "symfony/security-bundle": "^7.0",
     "symfony/uid": "^7.0",
     "doctrine/orm": "^3.0"
   },
