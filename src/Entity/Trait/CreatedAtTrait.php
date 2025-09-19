@@ -5,7 +5,7 @@ namespace Tdc\ToolboxBundle\Entity\Trait;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * This trait provides an easy to use CreatedAt field for an entity.
+ * This trait provides an easy-to-use CreatedAt field for an entity.
  * To get this trait working, you have to add the "HasLifecycleCallbacks" attribute onto your entity.
  */
 trait CreatedAtTrait

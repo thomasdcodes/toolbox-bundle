@@ -1,3 +1,6 @@
+# 0.2.3
+- Reset user functionality, added IdTrait
+
 # 0.2.2
 - First config for user functionality
 

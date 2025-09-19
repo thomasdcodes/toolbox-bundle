@@ -3,7 +3,7 @@
   "description": "Gives a toolbox with a lot of helper classes and functionality needed in every project.",
   "keywords": ["toolbox", "class collection", "helper classes"],
   "type": "symfony-bundle",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "license": "MIT",
   "authors": [
     {

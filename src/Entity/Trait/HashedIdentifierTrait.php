@@ -32,5 +32,4 @@ trait HashedIdentifierTrait
     {
         $this->setIdentifier(Uuid::v4());
     }
-
 }

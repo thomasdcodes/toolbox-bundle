@@ -7,6 +7,7 @@ It also provides the basic User operations like login, logout, registration and 
 
 ## Traits
 
+- IdTrait
 - CreatedAtTrait
 - UpdatedAtTrait
 - HashedIdIdentifierTrait
