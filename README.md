@@ -12,6 +12,6 @@ It also provides the basic User operations like login, logout, registration and 
 - UpdatedAtTrait
 - HashedIdIdentifierTrait
 
-## User based features
+## Version Service
 
-The User holds a lot of functionality. Follow this [documentation](./docs/user_functionality.md). 
+You can read and show the version and the changelog of your app. Follow this [documentation](./docs/changelog.md). 

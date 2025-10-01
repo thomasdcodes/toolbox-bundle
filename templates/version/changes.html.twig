@@ -1,0 +1,17 @@
+{% block error %}
+    {% if error %}
+        <p>Es wurde keine Changelog.md gefunden.</p>
+    {% endif %}
+{% endblock %}
+
+{% block headline %}
+    {% if changelog %}
+        <h2>Letzte Änderungen:</h2>
+    {% endif %}
+{% endblock %}
+
+{% block changelog %}
+    {% if changelog %}
+        {{ changelog|markdown_to_html }}
+    {% endif %}
+{% endblock %}

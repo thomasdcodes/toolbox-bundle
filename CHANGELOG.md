@@ -1,3 +1,6 @@
+# 0.3.0
+- Added VersionReaderService
+
 # 0.2.3
 - Reset user functionality, added IdTrait
 
