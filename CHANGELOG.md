@@ -1,3 +1,6 @@
+# 0.4.0
+- Added Symfony 8 support
+
 # 0.3.0
 - Added VersionReaderService
 
