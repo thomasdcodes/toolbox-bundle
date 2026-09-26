@@ -1,3 +1,6 @@
+# 0.7.0
+- Add user verification service
+
 # 0.6.0
 - Added verifiable user functionality
 
