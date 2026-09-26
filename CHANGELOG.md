@@ -1,3 +1,6 @@
+# 0.6.0
+- Added verifiable user functionality
+
 # 0.5.0
 - Fixed Version Service
 
