@@ -2,7 +2,7 @@
 
 ## General
 
-This Bundle provides some general tools like Traits for extending entity classes.
+This Bundle provides some general tools like traits for extending entity classes.
 It also provides the basic User operations like login, logout, registration and password reset.
 
 ## Traits

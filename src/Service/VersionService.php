@@ -23,7 +23,9 @@ readonly final class VersionService
             throw new \Exception('composer.json not found. Looked into ' . $this->projectDir);
         }
 
-        $composerData = $this->cache->get('tdc.toolbox.version', function () use ($composerFilePath) {
+        $cacheKey = sprintf('tdc.toolbox.version.%d', filemtime($composerFilePath));
+
+        $composerData = $this->cache->get($cacheKey, function () use ($composerFilePath) {
             return json_decode(file_get_contents($composerFilePath), true);
         });
 
@@ -38,7 +40,9 @@ readonly final class VersionService
             throw new \Exception('changelog.md not found. Looked into ' . $this->projectDir);
         }
 
-        return $this->cache->get('tdc.toolbox.changelog', function () use ($changelogFilePath) {
+        $cacheKey = sprintf('tdc.toolbox.changelog.%d', filemtime($changelogFilePath));
+
+        return $this->cache->get($cacheKey, function () use ($changelogFilePath) {
             return file_get_contents($changelogFilePath);
         });
     }

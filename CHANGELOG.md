@@ -1,3 +1,6 @@
+# 0.5.0
+- Fixed Version Service
+
 # 0.4.0
 - Added Symfony 8 support
 
