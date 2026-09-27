@@ -1,3 +1,6 @@
+# 0.8.0
+- Added functionality to verification service
+
 # 0.7.0
 - Add user verification service
 
