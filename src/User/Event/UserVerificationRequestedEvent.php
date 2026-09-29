@@ -11,6 +11,7 @@ final readonly class UserVerificationRequestedEvent
 {
     public function __construct(
         public EmailUserInterface&VerifiableUserInterface $user,
+        public string $token,
     ) {
     }
 }

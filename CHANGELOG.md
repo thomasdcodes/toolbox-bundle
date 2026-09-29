@@ -1,3 +1,6 @@
+# 0.8.1
+- Added token to verification event
+
 # 0.8.0
 - Added functionality to verification service
 

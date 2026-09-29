@@ -7,6 +7,7 @@ namespace Tdc\ToolboxBundle\User\Service;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Tdc\ToolboxBundle\User\Contract\EmailUserInterface;
 use Tdc\ToolboxBundle\User\Contract\VerifiableUserInterface;
+use Tdc\ToolboxBundle\User\Contract\VerificationTokenGeneratorInterface;
 use Tdc\ToolboxBundle\User\Event\UserVerificationRequestedEvent;
 use Tdc\ToolboxBundle\User\Event\UserVerifiedEvent;
 
@@ -14,6 +15,7 @@ final readonly class UserVerificationService
 {
     public function __construct(
         private EventDispatcherInterface $eventDispatcher,
+        private VerificationTokenGeneratorInterface $tokenGenerator,
     )
     {
     }
@@ -24,8 +26,10 @@ final readonly class UserVerificationService
             return;
         }
 
+        $token = $this->tokenGenerator->generate($user);
+
         $this->eventDispatcher->dispatch(
-            new UserVerificationRequestedEvent($user)
+            new UserVerificationRequestedEvent($user, $token)
         );
     }
 
